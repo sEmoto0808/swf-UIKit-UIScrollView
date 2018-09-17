@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swf_ScrollView_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxQ-6U-92D">
+                                <rect key="frame" x="0.0" y="20" width="500" height="49"/>
+                                <subviews>
+                                    <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDH-mf-kOE">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="500" id="3hs-FW-Xjp"/>
+                                        </constraints>
+                                        <items>
+                                            <tabBarItem systemItem="favorites" id="nDv-3K-Z6d"/>
+                                            <tabBarItem systemItem="more" id="0H9-6k-8pZ"/>
+                                            <tabBarItem systemItem="history" id="dka-qG-5PH"/>
+                                            <tabBarItem systemItem="bookmarks" id="IWN-AJ-Z8u"/>
+                                            <tabBarItem systemItem="search" id="nlC-kg-S6L"/>
+                                            <tabBarItem systemItem="downloads" id="Aip-Ud-xKP"/>
+                                        </items>
+                                        <color key="selectedImageTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tabBar>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XDH-mf-kOE" firstAttribute="top" secondItem="BxQ-6U-92D" secondAttribute="top" id="BSR-kw-ayB"/>
+                                    <constraint firstAttribute="trailing" secondItem="XDH-mf-kOE" secondAttribute="trailing" id="Bnj-nk-sTu"/>
+                                    <constraint firstItem="XDH-mf-kOE" firstAttribute="height" secondItem="BxQ-6U-92D" secondAttribute="height" id="GZt-Ch-g6A"/>
+                                    <constraint firstAttribute="height" constant="49" id="Kd7-pF-my8"/>
+                                    <constraint firstItem="XDH-mf-kOE" firstAttribute="leading" secondItem="BxQ-6U-92D" secondAttribute="leading" id="ZH3-g4-vQ4"/>
+                                    <constraint firstAttribute="bottom" secondItem="XDH-mf-kOE" secondAttribute="bottom" id="tMc-FF-9p5"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="sFl-lv-kb8"/>
+                                </connections>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2g-vL-ODj">
+                                <rect key="frame" x="0.0" y="77" width="500" height="823"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueC-8s-Qdw">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="823"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dhb-QL-SZv">
+                                                <rect key="frame" x="130" y="687" width="240" height="128"/>
+                                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="YBn-lv-4e2"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↓↓下へ↓↓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeA-P1-Qd2">
+                                                <rect key="frame" x="203.5" y="401" width="93" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="823" id="1Lo-bS-6A6"/>
+                                            <constraint firstItem="AeA-P1-Qd2" firstAttribute="centerY" secondItem="ueC-8s-Qdw" secondAttribute="centerY" id="Z3R-9U-dXa"/>
+                                            <constraint firstItem="AeA-P1-Qd2" firstAttribute="centerX" secondItem="ueC-8s-Qdw" secondAttribute="centerX" id="h7j-jS-LLL"/>
+                                            <constraint firstAttribute="bottom" secondItem="Dhb-QL-SZv" secondAttribute="bottom" constant="8" id="oFg-rl-Bmq"/>
+                                            <constraint firstItem="Dhb-QL-SZv" firstAttribute="top" secondItem="ueC-8s-Qdw" secondAttribute="top" constant="687" id="sEj-gA-d1p"/>
+                                            <constraint firstItem="Dhb-QL-SZv" firstAttribute="centerX" secondItem="ueC-8s-Qdw" secondAttribute="centerX" id="zh3-It-QKg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ueC-8s-Qdw" firstAttribute="leading" secondItem="z2g-vL-ODj" secondAttribute="leading" id="Cde-mA-xPm"/>
+                                    <constraint firstAttribute="trailing" secondItem="ueC-8s-Qdw" secondAttribute="trailing" id="bag-Lv-Ekf"/>
+                                    <constraint firstItem="ueC-8s-Qdw" firstAttribute="top" secondItem="z2g-vL-ODj" secondAttribute="top" id="i5g-Fb-Poe"/>
+                                    <constraint firstAttribute="bottom" secondItem="ueC-8s-Qdw" secondAttribute="bottom" id="ree-lm-3V0"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rRA-D6-rqV"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ueC-8s-Qdw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="45w-tj-yRg"/>
+                            <constraint firstItem="z2g-vL-ODj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5b1-RM-G7l"/>
+                            <constraint firstItem="z2g-vL-ODj" firstAttribute="top" secondItem="BxQ-6U-92D" secondAttribute="bottom" constant="8" id="9jn-OK-D0J"/>
+                            <constraint firstItem="z2g-vL-ODj" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QUk-rd-1Ae"/>
+                            <constraint firstItem="z2g-vL-ODj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hiH-db-BEY"/>
+                            <constraint firstItem="BxQ-6U-92D" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lgL-2V-Nrz"/>
+                            <constraint firstItem="BxQ-6U-92D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uhN-81-J1B"/>
+                            <constraint firstItem="BxQ-6U-92D" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uup-31-5Sz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="500" height="900"/>
+                    <connections>
+                        <outlet property="contentScrollView" destination="z2g-vL-ODj" id="Zcg-T2-WdS"/>
+                        <outlet property="tabBar" destination="XDH-mf-kOE" id="TT7-Rg-oFX"/>
+                        <outlet property="tabbarScrollView" destination="BxQ-6U-92D" id="PWT-6n-T5U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="132.23388305847078"/>
+        </scene>
+    </scenes>
+</document>
