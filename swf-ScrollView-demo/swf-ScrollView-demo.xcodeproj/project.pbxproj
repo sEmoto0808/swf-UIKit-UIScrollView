@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A22C0B1121594D30008AE0AC /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C0B1021594D30008AE0AC /* ScrollViewController.swift */; };
+		A22C0B1321594D3C008AE0AC /* ScrollViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A22C0B1221594D3C008AE0AC /* ScrollViewController.storyboard */; };
+		A22C0B1521594F79008AE0AC /* TableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C0B1421594F79008AE0AC /* TableViewProvider.swift */; };
 		A2E2621A214ECCDE0098A43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E26219214ECCDE0098A43E /* AppDelegate.swift */; };
 		A2E2621C214ECCDF0098A43E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E2621B214ECCDF0098A43E /* ViewController.swift */; };
 		A2E2621F214ECCDF0098A43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E2621D214ECCDF0098A43E /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A22C0B1021594D30008AE0AC /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		A22C0B1221594D3C008AE0AC /* ScrollViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollViewController.storyboard; sourceTree = "<group>"; };
+		A22C0B1421594F79008AE0AC /* TableViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProvider.swift; sourceTree = "<group>"; };
 		A2E26216214ECCDE0098A43E /* swf-ScrollView-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swf-ScrollView-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E26219214ECCDE0098A43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E2621B214ECCDF0098A43E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				A2E2622B214ED1950098A43E /* images.jpeg */,
 				A2E26222214ECCE00098A43E /* LaunchScreen.storyboard */,
 				A2E26225214ECCE00098A43E /* Info.plist */,
+				A22C0B1021594D30008AE0AC /* ScrollViewController.swift */,
+				A22C0B1421594F79008AE0AC /* TableViewProvider.swift */,
+				A22C0B1221594D3C008AE0AC /* ScrollViewController.storyboard */,
 			);
 			path = "swf-ScrollView-demo";
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 			files = (
 				A2E26224214ECCE00098A43E /* LaunchScreen.storyboard in Resources */,
 				A2E2622C214ED1950098A43E /* images.jpeg in Resources */,
+				A22C0B1321594D3C008AE0AC /* ScrollViewController.storyboard in Resources */,
 				A2E26221214ECCE00098A43E /* Assets.xcassets in Resources */,
 				A2E2621F214ECCDF0098A43E /* Main.storyboard in Resources */,
 			);
@@ -139,7 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22C0B1521594F79008AE0AC /* TableViewProvider.swift in Sources */,
 				A2E2621C214ECCDF0098A43E /* ViewController.swift in Sources */,
+				A22C0B1121594D30008AE0AC /* ScrollViewController.swift in Sources */,
 				A2E2621A214ECCDE0098A43E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
